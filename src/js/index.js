@@ -1,6 +1,7 @@
+import projects from './projects.js'
+
 const rightArrow = document.getElementById('right-arrow')
 const leftArrow = document.getElementById('left-arrow')
-
 
 const profile = document.getElementById('profile-info')
 const skills = document.getElementById('skills')
@@ -17,4 +18,16 @@ leftArrow.addEventListener('click', () => {
     rightArrow.classList.remove('hide')
     skills.classList.add('hide')
     leftArrow.classList.add('hide')
+})
+
+const projectsEl = document.getElementById('projects')
+
+projects.forEach(project => {
+    projectsEl.innerHTML += 
+    `<a href="${project.link}" target="_blank">
+        <div class="project">
+        <img src="${project.image}" alt="${project.alt}">
+        <h3>${project.name}</h3>
+        </div>
+        </a>`
 })
