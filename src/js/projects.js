@@ -21,6 +21,13 @@ let projects = [{
     link: 'https://leo-fogaca.github.io/projeto-mario/',
     image: './src/images/mario.jpg',
     alt: 'Imagem do projeto do Mario'
-}]
+},
+{
+    name: 'Landing page',
+    link: 'https://leo-fogaca.github.io/landing-page/',
+    image: './src/images/landing-page.jpg',
+    alt: 'Imagem da landing page'
+}
+]
 
 export default projects
